@@ -13,6 +13,8 @@ export class EmpleadoComponent  {
   apellido = "Solano";
   private edad = 18;
   
+  habilitacionCuadro = true;
+  
   getEdad(){
     return this.edad;
   }
