@@ -14,6 +14,16 @@ export class EmpleadoComponent  {
   private edad = 18;
   
   habilitacionCuadro = true;
+  usuRegistrado = false;
+  textoDeRegistro = "No hay nadie registrado";
+
+  getRegistroUsuario(){
+    this.usuRegistrado = false;
+  }
+
+  setUsuarioRegistrado(){
+    this.textoDeRegistro = "El usuario se acaba de registrar";
+  }
   
   getEdad(){
     return this.edad;

@@ -4,3 +4,10 @@
 <p>{{empresa.value}}</p>
 <p>Introduce la empresa</p>
 <input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro">
+
+<br>
+{{textoDeRegistro}}
+<br>
+
+Registrado: <input type="checkbox" name="" id="registro" [checked]="usuRegistrado" (click)="setUsuarioRegistrado()">
+{{getRegistroUsuario()}}
