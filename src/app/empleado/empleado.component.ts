@@ -13,10 +13,6 @@ export class EmpleadoComponent  {
   apellido = "Solano";
   private edad = 18;
   
-  llamaEmpresa(value:String){
-    
-  }
-  
   getEdad(){
     return this.edad;
   }

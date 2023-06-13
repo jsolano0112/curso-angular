@@ -3,6 +3,4 @@
 <p>{{getEdad()}}</p>
 <p>{{empresa.value}}</p>
 <p>Introduce la empresa</p>
-<input type="text" #empresa>
-<br>
-<input type="button" value="Guardar" (click)="llamaEmpresa(empresa.value)"/>
+<input type="text" #empresa (keyup)="0">
