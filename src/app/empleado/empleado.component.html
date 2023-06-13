@@ -1,1 +1,8 @@
-<p>empleado works!</p>
+
+<p>{{nombre}}</p>
+<p>{{getEdad()}}</p>
+<p>{{empresa.value}}</p>
+<p>Introduce la empresa</p>
+<input type="text" #empresa>
+<br>
+<input type="button" value="Guardar" (click)="llamaEmpresa(empresa.value)"/>

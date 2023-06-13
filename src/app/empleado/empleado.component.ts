@@ -8,6 +8,17 @@ import { Component } from '@angular/core';
   //template:"<p>empleado works!</p>",
   //styles:["p{background-color: rebeccapurple;}"]
 })
-export class EmpleadoComponent {
+export class EmpleadoComponent  {
+  nombre = "Juana";
+  apellido = "Solano";
+  private edad = 18;
+  
+  llamaEmpresa(value:String){
+    
+  }
+  
+  getEdad(){
+    return this.edad;
+  }
 
 }
