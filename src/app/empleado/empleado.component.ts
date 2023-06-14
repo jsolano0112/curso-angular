@@ -21,8 +21,13 @@ export class EmpleadoComponent  {
     this.usuRegistrado = false;
   }
 
-  setUsuarioRegistrado(){
-    this.textoDeRegistro = "El usuario se acaba de registrar";
+  setUsuarioRegistrado(event:Event){
+    // this.textoDeRegistro = "El usuario se acaba de registrar";
+    if((<HTMLInputElement>event.target).value == "si"){
+      this.textoDeRegistro = "El usuario se acaba de registrar"
+    }else{
+      this.textoDeRegistro = "No hay nadie registrado";
+    }
   }
   
   getEdad(){
