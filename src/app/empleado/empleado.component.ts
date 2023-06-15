@@ -12,7 +12,8 @@ export class EmpleadoComponent  {
   nombre = "Juana";
   apellido = "Solano";
   private edad = 18;
-  
+  empresa = "Google";
+
   habilitacionCuadro = true;
   usuRegistrado = false;
   textoDeRegistro = "No hay nadie registrado";

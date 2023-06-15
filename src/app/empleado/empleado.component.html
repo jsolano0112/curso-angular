@@ -1,9 +1,9 @@
 
-<p>{{nombre}}</p>
-<p>{{getEdad()}}</p>
-<p>{{empresa.value}}</p>
+<p>Nombre: {{nombre}}</p>
+<p>Edad: {{getEdad()}}</p>
+<p>Empresa: {{empresa}}</p>
 <p>Introduce la empresa</p>
-<input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro">
+<input type="text" [(ngModel)]="empresa">
 
 <br>
 {{textoDeRegistro}}
